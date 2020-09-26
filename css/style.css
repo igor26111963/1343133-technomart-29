@@ -174,11 +174,26 @@ font-family: 'PT Sans', sans-serif; */
     color: var(--basic-darkgrey);
 }
 
+.shop {
+    display: grid;
+}
+
 .shop-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     padding: 0;
+    gap: 20px;
+}
+
+.shop-item-discount {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.shop-item-technic {
+    grid-column-start: 3;
+    grid-row-start: 3;
 }
 
 .shop-item-material,
@@ -256,7 +271,7 @@ font-family: 'PT Sans', sans-serif; */
 }
 
 .shop-slider-item {
-    background-image: url(https://via.placeholder.com/620x266);
+    background-image: url(https://via.placeholder.com/610x266);
     background-repeat: no-repeat;
     color: var(--basic-white);
 }
