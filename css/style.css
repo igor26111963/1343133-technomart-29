@@ -244,11 +244,9 @@
 .shop-item-material {
     background-color: var(--basic-yellow);
 }
-
 .shop-item-instrument {
     background-color: var(--special-blue);
 }
-
 .shop-item-technic {
     background-color: var(--special-lilac);
 }
@@ -479,7 +477,6 @@
 
 .service {
     background-color: var(--basic-darkwhite);
-    /* height: 522px; */
     padding: 64px 0 95px 0;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
