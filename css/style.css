@@ -114,7 +114,7 @@
     background-color: var(--basic-darkwhite);
 }
 .header-bottom-inner{
-padding: 26px 0;
+    padding: 26px 0;
     display: grid;
     grid-template-columns: max-content 1fr max-content max-content;
     grid-gap: 10px;
@@ -184,6 +184,7 @@ padding: 26px 0;
 }
 .header-nav-item{
     list-style: none;
+    display: inline;
 }
 .header-nav-link {
     text-decoration: none;
@@ -207,38 +208,39 @@ padding: 26px 0;
 }
 
 .shop {
-    position: relative;
-}
 
-.shop-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 0;
-    gap: 20px;
 }
-
+.shop-grid{
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 1fr 123px 123px;
+  padding: 0;
+  gap: 20px;
+}
 .shop-item-discount {
     grid-column-start: 3;
     grid-row-start: 2;
 }
-
 .shop-item-technic {
     grid-column-start: 3;
     grid-row-start: 3;
 }
-
 .shop-item-material,
 .shop-item-instrument,
 .shop-item-technic,
 .shop-item-discount,
 .shop-item-delivery {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
     width: 300px;
     padding: 27px 0;
     position: relative;
     overflow: hidden;
 }
-
+.shop-item-grid{
+  margin-bottom: 13px;
+}
 .shop-item-material {
     background-color: var(--basic-yellow);
 }
@@ -292,24 +294,15 @@ padding: 26px 0;
 }
 
 .shop-item-image {
-    position: absolute;
-    content: "";
-    left: 200px;
-    top: 30px;
+
 }
 
 .shop-slider {
-    position: absolute;
-    content: "";
-    width: 620px;
-    /* height: 266px; */
-    left: 0;
-    bottom: 0;
+
 }
 
 .shop-slider-perforator {
     width: 620px;
-    /* min-height: 266px; */
 }
 
 .shop-slider-item {
@@ -366,10 +359,10 @@ padding: 26px 0;
     align-content: center;
     background-color: var(--basic-beige);
     padding: 25px 20px 25px;
-    margin-bottom: 20px;
+    margin: 70px 0 20px;
 }
 .manufacturer-top{
-    margin-top: 70px;
+
 }
 .product-title,
 .manufacturer-title,
@@ -577,10 +570,9 @@ padding: 26px 0;
     width: 180px;
 }
 .contact-picture{
-  margin: 32px 0 25px;
+    margin: 32px 0 25px;
 }
 
-.manufacturer-wrapper {}
 
 .manufacturer-list {
     padding: 0;
@@ -613,6 +605,7 @@ padding: 26px 0;
 }
 .breadcrumbs-item{
     list-style: none;
+    display: inline;
 }
 .breadcrumbs-link {
     font-family: "PT Sans", sans-serif;
@@ -653,6 +646,7 @@ padding: 26px 0;
     /* для визуального удобства */
     margin-top: 15px;
     list-style: none;
+    display: inline;
 }
 
 .pagination-link {
@@ -663,6 +657,7 @@ padding: 26px 0;
     text-transform: uppercase;
     color: var(--basic-black);
     border: 1px solid #e5e5e5;
+
 }
 
 .pagination-link-active {
@@ -699,6 +694,7 @@ padding: 26px 0;
     display: grid;
     grid-template-columns: 220px 1fr;
     grid-column-gap: 70px;
+    grid-row-gap: 20px;
 }
 
 .footer-logo {
@@ -717,6 +713,7 @@ padding: 26px 0;
 .footer-nav-top-item,
 .footer-nav-bottom-item {
     list-style: none;
+    display: inline;
 }
 
 .footer-nav-top-link {
@@ -827,3 +824,10 @@ padding: 26px 0;
     color: var(--basic-red);
 }
 
+/* .shop-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 0;
+  gap: 20px;
+} */
