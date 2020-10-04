@@ -55,6 +55,20 @@
     padding: 0 10px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 .header-top {
     background-color: var(--basic-dark);
 }
@@ -232,7 +246,7 @@
     border: none;
     outline: none;
 }
-.header-bottom-button::before{
+.header-bottom-box .header-bottom-button::before{
     position: absolute;
     content: "";
     width: 20px;
@@ -243,7 +257,7 @@
     background-repeat: no-repeat;
     opacity: 0.3;
 }
-.header-bottom-button::after{
+.header-bottom-box .header-bottom-button::after{
     position: absolute;
     content: "";
     width: 20px;
@@ -350,7 +364,7 @@
 }
 
 .shop {
-
+    margin-top: 60px;
 }
 .shop-grid{
     display: grid;
@@ -750,7 +764,7 @@
     display: grid;
     grid-template-columns: 1fr;
     text-align: left;
-    padding: 20px;
+    padding: 15px 20px;
     border: none;
     outline: none;
 
@@ -791,10 +805,22 @@
     top: 0;
 }
 .service-slider-item button{
-    display: block;
+    position: relative;
+    /* display: block; */
     z-index: 1;
     border-radius: 2px;
 }
+.service-slider-buttons::after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 279px;
+    top: 185px;
+    left: 428px;
+    background-image: url(../img/line.png);
+    background-repeat: no-repeat;
+}
+
 
 .company-grid {
     display: grid;
