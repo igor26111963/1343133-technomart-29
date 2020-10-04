@@ -22,10 +22,10 @@
           <div class="placeholder"></div>
           <ul class="header-top-list">
             <li class="header-top-item">
-              <a class="header-top-link" href="#">Закладки:</a>
+              <a class="header-top-link-bookmark" href="#">Закладки:</a>
             </li>
             <li class="header-top-item">
-              <a class="header-top-link" href="#">Корзина:</a>
+              <a class="header-top-link-basket" href="#">Корзина:</a>
             </li>
           </ul>
           <button class="header-top-button">Оформить заказ</button>
@@ -105,6 +105,28 @@
           <div class="catalog-sidebar-title">
             <div class="catalog-sidebar-text">ФИЛЬТР:</div>
           </div>
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-item">
+              <legend>ЦЕНА:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">-
+                    <input type="number" name="max-price" value="30000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </form>
         </div>
         <div class="catalog-page-item">
           <div class="catalog-page-menu">

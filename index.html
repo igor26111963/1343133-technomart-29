@@ -22,10 +22,10 @@
           <div class="placeholder"></div>
           <ul class="header-top-list">
             <li class="header-top-item">
-              <a class="header-top-link" href="#">Закладки:</a>
+              <a class="header-top-link-bookmark" href="#">Закладки:</a>
             </li>
             <li class="header-top-item">
-              <a class="header-top-link" href="#">Корзина:</a>
+              <a class="header-top-link-basket" href="#">Корзина:</a>
             </li>
           </ul>
           <button class="header-top-button">Оформить заказ</button>
@@ -40,7 +40,7 @@
             <a class="header-bottom-phone" href="#">+7 (812) 555-05-55</a>
             <p class="header-bottom-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
-          <button class="header-bottom-button">Войти</button>
+          <button class="header-bottom-button button-login">Войти</button>
           <button class="header-bottom-button">Регистрация</button>
         </div>
         <nav class="header-nav">
@@ -77,7 +77,6 @@
       <section class="shop">
         <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
         <div class="shop-grid">
-          <!-- <ul class="shop-list"> -->
           <div class="shop-item-material">
             <span class="shop-new shop-new-active">new</span>
             <div class="shop-item-grid">
@@ -118,22 +117,26 @@
             </div>
             <img class="shop-item-image" src="img/icon-5.svg" alt="Доставка" width="78" height="63">
           </div>
-          </ul>
 
-          <div class="shop-slider">
-            <div class="shop-slider-perforator">
-              <h3 class="shop-slider-title">Перфораторы</h3>
-              <p class="shop-slider-text">Настоящие мужские игрушки</p>
-              <a class="button shop-slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+          <section class="shop-slider">
+            <ul class="shop-slider-list">
+              <li class="shop-slider-perforator slide-current">
+                <h3 class="shop-slider-title">Перфораторы</h3>
+                <p class="shop-slider-text">Настоящие мужские игрушки</p>
+                <a class="button shop-slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+              </li>
+              <li class="shop-slider-drill">
+                <h3 class="shop-slider-title">Дрели</h3>
+                <p class="shop-slider-text">Соседям на радость!</p>
+                <a class="button shop-slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+              </li>
+            </ul>
+            <div class="shop-slider-controls">
+              <button class="current" type="button" aria-label="Первый слайд"></button>
+              <button type="button" aria-label="Второй слайд"></button>
             </div>
-          </div>
-          <div class="shop-slider-drill">
-            <h3 class="shop-slider-title">Дрели</h3>
-            <p class="shop-slider-text">Соседям на радость!</p>
-            <a class="button shop-slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-          </div>
+          </section>
         </div>
-
       </section>
 
       <section class="product">
@@ -254,33 +257,38 @@
         <p class="service-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех
           сил, чтобы сделать ваши покупки приятными.</p>
         <div class="service-slider">
+          <ul class="service-slider-list">
+            <li class="service-slider-item service-slider-current">
+              <h3 class="service-slider-title">Доставка</h3>
+              <p class="service-slider-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+                бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+
+              <img class="service-slider-image" src="img/delivery.png" alt="Автомобиль" width="468" height="261">
+            </li>
+            <li class="service-slider-item">
+              <h3 class="service-slider-title">Гарантия</h3>
+              <p class="service-slider-text">Если купленный у нас товар поломается или заискрит, а также в случае
+                пожара,
+                спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+                сгоревший
+                товар на новый. Дом уж восстановите как-нибудь
+                сами.
+              </p>
+              <img class="service-slider-image" src="img/guarantee.png" alt="Сто процентов" width="387" height="290">
+            </li>
+            <li class="service-slider-item">
+              <h3 class="service-slider-title">Кредит</h3>
+              <p class="service-slider-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на
+                помощь.
+              </p>
+              <a class="button" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+              <img class="service-slider-image" src="img/credit.png" alt="Финансы" width="374" height="194">
+            </li>
+          </ul>
           <div class="service-slider-buttons">
             <button class="service-slider-button service-slider-button-active">Доставка</button>
             <button class="service-slider-button">Гарантия</button>
             <button class="service-slider-button">Кредит</button>
-          </div>
-          <div class="service-slider-item service-slider-item-active">
-            <h3 class="service-slider-title">Доставка</h3>
-            <p class="service-slider-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-              бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-            <img class="service-slider-image" src="img/delivery.png" alt="Автомобиль" width="468" height="261">
-          </div>
-          <div class="service-slider-item">
-            <h3 class="service-slider-title">Гарантия</h3>
-            <p class="service-slider-text">Если купленный у нас товар поломается или заискрит, а также в случае пожара,
-              спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший
-              товар на новый. Дом уж восстановите как-нибудь
-              сами.
-            </p>
-            <img class="service-slider-image" src="img/guarantee.png" alt="Сто процентов" width="468" height="261">
-          </div>
-          <div class="service-slider-item">
-            <h3 class="service-slider-title">Кредит</h3>
-            <p class="service-slider-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на
-              помощь.
-            </p>
-            <a class="button" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
-            <img class="service-slider-image" src="img/credit.png" alt="Финансы" width="468" height="261">
           </div>
         </div>
       </div>
@@ -301,7 +309,7 @@
               <li class="about-item">Автотрейдинг</li>
               <li class="about-item">ЖелДорЭкспедиция</li>
             </ul>
-            <a class="button" href="#">Подробнее о компании</a>
+            <a class="button about-button" href="#">Подробнее о компании</a>
           </section>
           <section class="contact">
             <h2 class="company-title">КОНТАКТЫ</h2>
