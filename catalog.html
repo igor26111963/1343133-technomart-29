@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=PT+Sans:wght@400;700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -35,7 +36,8 @@
     <div class="header-bottom">
       <div class="container">
         <div class="header-bottom-inner">
-          <p class="header-bottom-text"><i>Интернет-магазин строительных материалов и инструментов для ремонта</i></p>
+          <p class="header-bottom-text"><i>Интернет-магазин строительных материалов<br> и инструментов для ремонта</i>
+          </p>
           <div class="header-bottom-contacts">
             <a class="header-bottom-phone" href="#">+7 (812) 555-05-55</a>
             <p class="header-bottom-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -100,13 +102,13 @@
         <h1 class="catalog-page-text">ПЕРФОРАТОРЫ</h1>
       </div>
 
+
+
       <div class="catalog-grid">
-        <div class="catalog-sidebar">
-          <div class="catalog-sidebar-title">
-            <div class="catalog-sidebar-text">ФИЛЬТР:</div>
-          </div>
+        <section class="filters">
+          <h3 class="catalog-sidebar-title">ФИЛЬТР:</h3>
           <form method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="filter-item">
+            <fieldset>
               <legend>ЦЕНА:</legend>
               <div class="range-filter">
                 <div class="range-controls">
@@ -127,7 +129,58 @@
               </div>
             </fieldset>
           </form>
-        </div>
+          <div class="selection">
+            <form method="get" action="https://echo.htmlacademy.ru">
+              <fieldset>
+                <legend>Производители:</legend>
+                <ul>
+                  <li class="filter-option filter-checkbox">
+                    <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="boch"
+                      id="filter-boch" checked>
+                    <label for="filter-boch">BOSCH</label>
+                  </li>
+                  <li class="filter-option filter-checkbox">
+                    <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="interskol"
+                      id="filter-interskol">
+                    <label for="filter-interskol">ИНТЕРСКОЛ</label>
+                  </li>
+                  <li class="filter-option filter-checkbox">
+                    <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="makita"
+                      id="makita" checked>
+                    <label for="filter-makita">MAKITA</label>
+                  </li>
+                  <li class="filter-option filter-checkbox">
+                    <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="dewalt"
+                      id="dewalt">
+                    <label for="filter-dewalt">Dewalt</label>
+                  </li>
+                  <li class="filter-option filter-checkbox">
+                    <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hitachi"
+                      id="hitachi">
+                    <label for="filter-hitachi">Hitachi</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>ПИТАНИЕ:</legend>
+                <ul>
+                  <li class="filter-option filter-radio">
+                    <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power"
+                      value="rechargeable" id="filter-rechargeable" checked>
+                    <label for="filter-rechargeable">Аккумуляторные</label>
+                  </li>
+                  <li class="filter-option filter-radio">
+                    <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power"
+                      value="power-line" id="filter-electronetwork">
+                    <label for="filter-electronetwork">Сетевые</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button type="submit" class="filter-button">Показать</button>
+            </form>
+          </div>
+        </section>
+
         <div class="catalog-page-item">
           <div class="catalog-page-menu">
             <ul class="catalog-page-menu-list">
@@ -344,8 +397,8 @@
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <div class="footer-bottom-grid">
-          <p class="footer-bottom-copiright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
+        <div class="footer-bottom-flex">
+          <p class="footer-bottom-copiright">© 2010–2019 Компания «Техномарт»<br> Все права защищены</p>
           <div class="footer-social">
             <ul class="footer-social-list">
               <li class="footer-social-item">

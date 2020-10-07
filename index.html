@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=PT+Sans:wght@400;700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -35,13 +36,16 @@
     <div class="header-bottom">
       <div class="container">
         <div class="header-bottom-inner">
-          <p class="header-bottom-text"><i>Интернет-магазин строительных материалов и инструментов для ремонта</i></p>
+          <p class="header-bottom-text"><i>Интернет-магазин строительных материалов<br> и инструментов для ремонта</i>
+          </p>
           <div class="header-bottom-contacts">
             <a class="header-bottom-phone" href="#">+7 (812) 555-05-55</a>
             <p class="header-bottom-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
-          <button class="header-bottom-button button-login">Войти</button>
-          <button class="header-bottom-button button-registration">Регистрация</button>
+          <div class="header-bottom-box">
+            <button class="button-login">Войти</button>
+            <button class="button-registration">Регистрация</button>
+          </div>
         </div>
         <nav class="header-nav">
           <ul class="header-nav-list">
@@ -72,7 +76,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="main">
     <div class="container">
       <section class="shop">
         <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
@@ -120,12 +124,12 @@
 
           <section class="shop-slider">
             <ul class="shop-slider-list">
-              <li class="shop-slider-perforator slide-current">
+              <li class="shop-slider-perforator">
                 <h3 class="shop-slider-title">Перфораторы</h3>
                 <p class="shop-slider-text">Настоящие мужские игрушки</p>
                 <a class="button shop-slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
               </li>
-              <li class="shop-slider-drill">
+              <li class="shop-slider-drill slide-current">
                 <h3 class="shop-slider-title">Дрели</h3>
                 <p class="shop-slider-text">Соседям на радость!</p>
                 <a class="button shop-slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
@@ -258,14 +262,14 @@
           сил, чтобы сделать ваши покупки приятными.</p>
         <div class="service-slider">
           <ul class="service-slider-list">
-            <li class="service-slider-item service-slider-current">
+            <li class="service-slider-item">
               <h3 class="service-slider-title">Доставка</h3>
               <p class="service-slider-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
                 бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
 
               <img class="service-slider-image" src="img/delivery.png" alt="Автомобиль" width="468" height="261">
             </li>
-            <li class="service-slider-item">
+            <li class="service-slider-item  service-slider-current">
               <h3 class="service-slider-title">Гарантия</h3>
               <p class="service-slider-text">Если купленный у нас товар поломается или заискрит, а также в случае
                 пожара,
@@ -274,7 +278,8 @@
                 товар на новый. Дом уж восстановите как-нибудь
                 сами.
               </p>
-              <img class="service-slider-image" src="img/guarantee.png" alt="Сто процентов" width="387" height="290">
+              <img class="service-slider-image-guarantee" src="img/guarantee.png" alt="Сто процентов" width="389"
+                height="283">
             </li>
             <li class="service-slider-item">
               <h3 class="service-slider-title">Кредит</h3>
@@ -282,7 +287,7 @@
                 помощь.
               </p>
               <a class="button" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
-              <img class="service-slider-image" src="img/credit.png" alt="Финансы" width="374" height="194">
+              <img class="service-slider-image" src="img/credit.png" alt="Финансы" width="465" height="285">
             </li>
           </ul>
           <div class="service-slider-buttons">
@@ -367,8 +372,8 @@
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <div class="footer-bottom-grid">
-          <p class="footer-bottom-copiright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
+        <div class="footer-bottom-flex">
+          <p class="footer-bottom-copiright">© 2010–2019 Компания «Техномарт»<br> Все права защищены</p>
           <div class="footer-social">
             <ul class="footer-social-list">
               <li class="footer-social-item">
