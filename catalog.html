@@ -23,10 +23,10 @@
           <div class="placeholder"></div>
           <ul class="header-top-list">
             <li class="header-top-item">
-              <a class="header-top-link-bookmark" href="#">Закладки:</a>
+              <a class="header-top-link-bookmark" href="#">Закладки:0</a>
             </li>
             <li class="header-top-item">
-              <a class="header-top-link-basket" href="#">Корзина:</a>
+              <a class="header-top-link-basket" href="#">Корзина:0</a>
             </li>
           </ul>
           <button class="header-top-button">Оформить заказ</button>
@@ -102,14 +102,12 @@
         <h1 class="catalog-page-text">ПЕРФОРАТОРЫ</h1>
       </div>
 
-
-
       <div class="catalog-grid">
         <section class="filters">
           <h3 class="catalog-sidebar-title">ФИЛЬТР:</h3>
           <form method="get" action="https://echo.htmlacademy.ru">
-            <fieldset>
-              <legend>ЦЕНА:</legend>
+            <fieldset class="range-inner">
+              <legend class="filter-title">ЦЕНА:</legend>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
@@ -122,7 +120,8 @@
                   <label class="min-price">
                     <input type="number" name="min-price" value="0">
                   </label>
-                  <label class="max-price">-
+                  <label class="max-price">
+                    &mdash;
                     <input type="number" name="max-price" value="30000">
                   </label>
                 </div>
@@ -131,48 +130,48 @@
           </form>
           <div class="selection">
             <form method="get" action="https://echo.htmlacademy.ru">
-              <fieldset>
-                <legend>Производители:</legend>
-                <ul>
+              <fieldset class="selection-checkbox-inner">
+                <legend class="filter-title">Производители:</legend>
+                <ul class="filter-option-list">
                   <li class="filter-option filter-checkbox">
                     <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="boch"
                       id="filter-boch" checked>
-                    <label for="filter-boch">BOSCH</label>
+                    <label class="selection-text" for="filter-boch">BOSCH</label>
                   </li>
                   <li class="filter-option filter-checkbox">
                     <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="interskol"
                       id="filter-interskol">
-                    <label for="filter-interskol">ИНТЕРСКОЛ</label>
+                    <label class="selection-text" for="filter-interskol">ИНТЕРСКОЛ</label>
                   </li>
                   <li class="filter-option filter-checkbox">
                     <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="makita"
-                      id="makita" checked>
-                    <label for="filter-makita">MAKITA</label>
+                      id="filter-makita" checked>
+                    <label class="selection-text" for="filter-makita">MAKITA</label>
                   </li>
                   <li class="filter-option filter-checkbox">
                     <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="dewalt"
-                      id="dewalt">
-                    <label for="filter-dewalt">Dewalt</label>
+                      id="filter-dewalt">
+                    <label class="selection-text" for="filter-dewalt">Dewalt</label>
                   </li>
                   <li class="filter-option filter-checkbox">
                     <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hitachi"
-                      id="hitachi">
-                    <label for="filter-hitachi">Hitachi</label>
+                      id="filter-hitachi">
+                    <label class="selection-text" for="filter-hitachi">Hitachi</label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset>
-                <legend>ПИТАНИЕ:</legend>
-                <ul>
+              <fieldset class="selection-radio-inner">
+                <legend class="filter-title">ПИТАНИЕ:</legend>
+                <ul class="filter-option-list">
                   <li class="filter-option filter-radio">
                     <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power"
                       value="rechargeable" id="filter-rechargeable" checked>
-                    <label for="filter-rechargeable">Аккумуляторные</label>
+                    <label class="selection-text" for="filter-rechargeable">Аккумуляторные</label>
                   </li>
                   <li class="filter-option filter-radio">
                     <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power"
                       value="power-line" id="filter-electronetwork">
-                    <label for="filter-electronetwork">Сетевые</label>
+                    <label class="selection-text" for="filter-electronetwork">Сетевые</label>
                   </li>
                 </ul>
               </fieldset>
@@ -181,12 +180,10 @@
           </div>
         </section>
 
-        <div class="catalog-page-item">
+        <div class="catalog-page-items">
           <div class="catalog-page-menu">
+            <h4 class="catalog-page-menu-title">СОРТИРОВКА:</h4>
             <ul class="catalog-page-menu-list">
-              <li class="catalog-page-menu-item">
-                <a class="catalog-page-menu-link" href="#">СОРТИРОВКА:</a>
-              </li>
               <li class="catalog-page-menu-item">
                 <a class="catalog-page-menu-link" href="#">ПО ЦЕНЕ</a>
               </li>
@@ -197,6 +194,18 @@
                 <a class="catalog-page-menu-link" href="#">ПО ФУНКЦИОНАЛУ</a>
               </li>
             </ul>
+            <div class="catalog-page-menu-button">
+              <button class="page-menu-button-up" type="button">
+                <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.66241 0L11.1624 10L0.162415 10" fill="black" />
+                </svg>
+              </button>
+              <button class="page-menu-button-doun" type="button">
+                <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.66241 0L11.1624 10L0.162415 10" fill="black" />
+                </svg>
+              </button>
+            </div>
           </div>
           <div class="product-item-grid">
             <div class="product-item">
@@ -331,7 +340,7 @@
               <a class="pagination-link" href="#">3</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">СЛЕДУЮЩАЯ</a>
+              <a class="pagination-link pagination-button" href="#">СЛЕДУЮЩАЯ</a>
             </li>
           </ul>
         </div>
