@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=PT+Sans:wght@400;700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -18,30 +19,48 @@
         <a class="header-logo">
           <img src="img/logo-technomart.svg" alt="Логотип Техномарт" width="110" height="17">
         </a>
-        <div class="header-top-grid">
-          <div class="placeholder"></div>
-          <ul class="header-top-list">
-            <li class="header-top-item">
-              <a class="header-top-link" href="#">Закладки:</a>
-            </li>
-            <li class="header-top-item">
-              <a class="header-top-link" href="#">Корзина:</a>
-            </li>
-          </ul>
-          <button class="header-top-button">Оформить заказ</button>
+        <div class="header-top-inner">
+          <form class="header-search-form" action="https://echo.htmlacademy.ru" method="get">
+            <input class="header-search" type="text" value="Поиск:" onfocus="if (value == 'Поиск:') {value = ''}"
+              onblur="if (value == '') {vaue = 'Поиск:'}">
+            <button class="header-search-button" type="submit"></button>
+          </form>
+          <a class="header-top-link-bookmark" href="#"><svg class="bookmark-image" width="14" height="16"
+              viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="image-path"
+                d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"
+                fill="white" fill-opacity="0.3" />
+            </svg>Закладки:0</a>
+          <a class="header-top-link-basket" href="#"><svg class="cart-image" width="15" height="15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="image-path"
+                d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z"
+                fill="#fff" fill-opacity="0.3" /></svg>Корзина:0</a>
+
+
+          <button class="header-top-button" type="submit">Оформить заказ</button>
         </div>
       </div>
     </div>
     <div class="header-bottom">
       <div class="container">
         <div class="header-bottom-inner">
-          <p class="header-bottom-text"><i>Интернет-магазин строительных материалов и инструментов для ремонта</i></p>
+          <p class="header-bottom-text"><i>Интернет-магазин строительных материалов<br> и инструментов для ремонта</i>
+          </p>
           <div class="header-bottom-contacts">
-            <a class="header-bottom-phone" href="#">+7 (812) 555-05-55</a>
+            <a class="header-bottom-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
             <p class="header-bottom-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
-          <button class="header-bottom-button">Войти</button>
-          <button class="header-bottom-button">Регистрация</button>
+          <div class="header-bottom-box">
+            <button class="button-login"><svg class="button-icon-login" width="20" height="17" viewBox="0 0 20 17"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="image-path" d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#3D546F" />
+                <path class="image-path"
+                  d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z"
+                  fill="#3D546F" />
+              </svg>Войти</button>
+            <button class="button-registration">Регистрация</button>
+          </div>
         </div>
         <nav class="header-nav">
           <ul class="header-nav-list">
@@ -72,12 +91,11 @@
     </div>
   </header>
 
-  <main>
+  <main class="main">
     <div class="container">
       <section class="shop">
         <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
         <div class="shop-grid">
-          <!-- <ul class="shop-list"> -->
           <div class="shop-item-material">
             <span class="shop-new shop-new-active">new</span>
             <div class="shop-item-grid">
@@ -87,7 +105,7 @@
             <img class="shop-item-image" src="img/icon-1.svg" alt="Материалы" width="44" height="65">
           </div>
           <div class="shop-item-instrument">
-            <span class="shop-new shop-new-active">new</span>
+            <span class="shop-new">new</span>
             <div class="shop-item-grid">
               <h3 class="shop-item-title">Инструмент</h3>
               <a class="shop-link" href="#">На все случаи</a>
@@ -95,7 +113,7 @@
             <img class="shop-item-image" src="img/icon-2.svg" alt="Инструмент" width="75" height="61">
           </div>
           <div class="shop-item-technic">
-            <span class="shop-new shop-new-active">new</span>
+            <span class="shop-new">new</span>
             <div class="shop-item-grid">
               <h3 class="shop-item-title">Техника</h3>
               <a class="shop-link" href="#">для стройки</a>
@@ -103,7 +121,7 @@
             <img class="shop-item-image" src="img/icon-3.svg" alt="Техника" width="78" height="62">
           </div>
           <div class="shop-item-discount">
-            <span class="shop-new shop-new-active">new</span>
+            <span class="shop-new">new</span>
             <div class="shop-item-grid">
               <h3 class="shop-item-title">Скидки 50%</h3>
               <a class="shop-link" href="#">На 350 товаров</a>
@@ -111,29 +129,33 @@
             <img class="shop-item-image" src="img/icon-4.svg" alt="Скидки 50%" width="59" height="72">
           </div>
           <div class="shop-item-delivery">
-            <span class="shop-new shop-new-active">new</span>
+            <span class="shop-new">new</span>
             <div class="shop-item-grid">
               <h3 class="shop-item-title">Доставка</h3>
               <a class="shop-link" href="#">Бесплатно</a>
             </div>
             <img class="shop-item-image" src="img/icon-5.svg" alt="Доставка" width="78" height="63">
           </div>
-          </ul>
 
-          <div class="shop-slider">
-            <div class="shop-slider-perforator">
-              <h3 class="shop-slider-title">Перфораторы</h3>
-              <p class="shop-slider-text">Настоящие мужские игрушки</p>
-              <a class="button shop-slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+          <section class="shop-slider">
+            <ul class="shop-slider-list">
+              <li class="shop-slider-perforator slide-current">
+                <h3 class="shop-slider-title">Перфораторы</h3>
+                <p class="shop-slider-text">Настоящие мужские игрушки</p>
+                <a class="button shop-slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+              </li>
+              <li class="shop-slider-drill">
+                <h3 class="shop-slider-title">Дрели</h3>
+                <p class="shop-slider-text">Соседям на радость!</p>
+                <a class="button shop-slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+              </li>
+            </ul>
+            <div class="shop-slider-controls">
+              <button class="current" type="button" aria-label="Первый слайд"></button>
+              <button type="button" aria-label="Второй слайд"></button>
             </div>
-          </div>
-          <div class="shop-slider-drill">
-            <h3 class="shop-slider-title">Дрели</h3>
-            <p class="shop-slider-text">Соседям на радость!</p>
-            <a class="button shop-slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-          </div>
+          </section>
         </div>
-
       </section>
 
       <section class="product">
@@ -153,7 +175,7 @@
               <span class="price-old"><del>32500 Р.</del></span>
               <span class="price">25500 Р.</span>
             </div>
-            <span class="product-new product-new-active">new</span>
+            <span class="product-new">new</span>
           </div>
           <div class="product-item">
             <div class="product-item-top">
@@ -179,7 +201,7 @@
               <span class="price-old"><del>30500 Р.</del></span>
               <span class="price">25500 Р.</span>
             </div>
-            <span class="product-new product-new-active">new</span>
+            <span class="product-new">new</span>
           </div>
           <div class="product-item">
             <div class="product-item-top">
@@ -189,7 +211,7 @@
             </div>
             <div class="product-item-bottom">
               <p class="product-item-text">Перфоратор BOSCH BFG 2000</p>
-              <span class="price-old"><del>22500 Р.</del></span>
+              <span class="price-old price-hidden"><del>22500 Р.</del></span>
               <span class="price">12500 Р.</span>
             </div>
             <span class="product-new product-new-active">new</span>
@@ -254,33 +276,39 @@
         <p class="service-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех
           сил, чтобы сделать ваши покупки приятными.</p>
         <div class="service-slider">
+          <ul class="service-slider-list">
+            <li class="service-slider-item  service-slider-current">
+              <h3 class="service-slider-title">Доставка</h3>
+              <p class="service-slider-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+                бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+
+              <img class="service-slider-image" src="img/delivery.png" alt="Автомобиль" width="468" height="261">
+            </li>
+            <li class="service-slider-item">
+              <h3 class="service-slider-title">Гарантия</h3>
+              <p class="service-slider-text">Если купленный у нас товар поломается или заискрит, а также в случае
+                пожара,
+                спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+                сгоревший
+                товар на новый. Дом уж восстановите как-нибудь
+                сами.
+              </p>
+              <img class="service-slider-image-guarantee" src="img/guarantee.png" alt="Сто процентов" width="389"
+                height="283">
+            </li>
+            <li class="service-slider-item">
+              <h3 class="service-slider-title">Кредит</h3>
+              <p class="service-slider-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на
+                помощь.
+              </p>
+              <a class="button" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+              <img class="service-slider-image" src="img/credit.png" alt="Финансы" width="465" height="285">
+            </li>
+          </ul>
           <div class="service-slider-buttons">
             <button class="service-slider-button service-slider-button-active">Доставка</button>
             <button class="service-slider-button">Гарантия</button>
             <button class="service-slider-button">Кредит</button>
-          </div>
-          <div class="service-slider-item service-slider-item-active">
-            <h3 class="service-slider-title">Доставка</h3>
-            <p class="service-slider-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-              бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-            <img class="service-slider-image" src="img/delivery.png" alt="Автомобиль" width="468" height="261">
-          </div>
-          <div class="service-slider-item">
-            <h3 class="service-slider-title">Гарантия</h3>
-            <p class="service-slider-text">Если купленный у нас товар поломается или заискрит, а также в случае пожара,
-              спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший
-              товар на новый. Дом уж восстановите как-нибудь
-              сами.
-            </p>
-            <img class="service-slider-image" src="img/guarantee.png" alt="Сто процентов" width="468" height="261">
-          </div>
-          <div class="service-slider-item">
-            <h3 class="service-slider-title">Кредит</h3>
-            <p class="service-slider-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на
-              помощь.
-            </p>
-            <a class="button" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
-            <img class="service-slider-image" src="img/credit.png" alt="Финансы" width="468" height="261">
           </div>
         </div>
       </div>
@@ -301,12 +329,14 @@
               <li class="about-item">Автотрейдинг</li>
               <li class="about-item">ЖелДорЭкспедиция</li>
             </ul>
-            <a class="button" href="#">Подробнее о компании</a>
+            <a class="button about-button" href="#">Подробнее о компании</a>
           </section>
           <section class="contact">
             <h2 class="company-title">КОНТАКТЫ</h2>
             <p class="contact-text">Вы можете забрать товар сами, заехав в наш офис:</p>
-            <img class="contact-picture" src="img/small-map.jpg" alt="Карта" width="300" height="158">
+            <a href="">
+              <img class="contact-picture" src="img/small-map.jpg" alt="Карта" width="300" height="158">
+            </a>
             <a class="button button-contact" href="#">Заблудились? Напишите нам!</a>
           </section>
         </div>
@@ -359,21 +389,21 @@
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <div class="footer-bottom-grid">
-          <p class="footer-bottom-copiright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
+        <div class="footer-bottom-flex">
+          <p class="footer-bottom-copiright">© 2010–2019 Компания «Техномарт»<br> Все права защищены</p>
           <div class="footer-social">
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a class="footer-social-link" href="#"><img class="vk" src="img/icon-vk.svg" alt="В Контакте"
-                    width="26px" height="15px"></a>
+                <a class="footer-social-link" href="#"><img class="vk" src="img/icon-vk.svg" alt="В Контакте" width="26"
+                    height="15"></a>
               </li>
               <li class="footer-social-item">
-                <a class="footer-social-link" href="#"><img class="fb" src="img/icon-fb.svg" alt="Fasebook" width="12px"
+                <a class="footer-social-link" href="#"><img class="fb" src="img/icon-fb.svg" alt="Fasebook" width="12"
                     height="22"></a>
               </li>
               <li class="footer-social-item">
                 <a class="footer-social-link" href="#"><img class="insta" src="img/icon-insta.svg" alt="Instagram"
-                    width="21px" height="21px"></a>
+                    width="21" height="21"></a>
               </li>
             </ul>
           </div>
@@ -385,6 +415,47 @@
       </div>
     </div>
   </footer>
+
+  <section class="modal modal-letter">
+    <h2 class="visually-hidden">Напишите нам</h2>
+
+    <form class="form-letter" action="https://echo.htmlacademy.ru" method="post">
+      <div class="modal-letter-item">
+        <p class="modal-description">Ваше имя:</p>
+        <label for="letter-name">
+          <input class="user-name" id="letter-name" type="text" name="name" placeholder="Имя Фамилия">
+        </label>
+      </div>
+      <div class="modal-letter-item">
+        <p class="modal-description">Ваш e-mail:</p>
+        <label for="letter-mail">
+          <input class="user-mail" type="email" name="email" id="letter-mail" placeholder="email@example.com">
+        </label>
+      </div>
+      <div class="modal-letter-item">
+        <p class="modal-description">Текст письма:</p>
+        <label for="letter-text">
+          <textarea class="user-text" name="comment" id="letter-text" cols="59" rows="4"
+            placeholder="В свободной форме"></textarea>
+        </label>
+      </div>
+    </form>
+
+    <div class="modal-button">
+      <button class="button" type="submit">Отправить</button>
+    </div>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31979.5498718426!2d30.284320014148715!3d59.93675724440811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1602358960614!5m2!1sru!2sru"
+      width="943" height="449" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+      title="Офис компании по адресу: ул. Большая Конюшенная 19, Санкт-Петерург"></iframe>
+    <!-- <img class="modal-image" src="img/large-map.png" alt="" width="943" height="449"> -->
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
 
 
 </body>
