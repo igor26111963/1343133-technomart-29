@@ -151,8 +151,8 @@
               </li>
             </ul>
             <div class="shop-slider-controls">
-              <button class="current" type="button" aria-label="Первый слайд"></button>
-              <button type="button" aria-label="Второй слайд"></button>
+              <button class="shop-slider-control-btn current" type="button" aria-label="Предыдущий слайд"></button>
+              <button class="shop-slider-control-btn" type="button" aria-label="Следующий слайд"></button>
             </div>
           </section>
         </div>
@@ -421,23 +421,17 @@
 
     <form class="form-letter" action="https://echo.htmlacademy.ru" method="post">
       <div class="modal-letter-item">
-        <p class="modal-description">Ваше имя:</p>
-        <label for="letter-name">
-          <input class="user-name" id="letter-name" type="text" name="name" placeholder="Имя Фамилия">
-        </label>
+        <label class="modal-letter-title" for="letter-name">Ваше имя:</label>
+        <input class="user-name" id="letter-name" type="text" name="name" placeholder="Имя Фамилия">
       </div>
       <div class="modal-letter-item">
-        <p class="modal-description">Ваш e-mail:</p>
-        <label for="letter-mail">
-          <input class="user-mail" type="email" name="email" id="letter-mail" placeholder="email@example.com">
-        </label>
+        <label class="modal-letter-title" for="letter-mail">Ваш e-mail:</label>
+        <input class="user-mail" type="email" name="email" id="letter-mail" placeholder="email@example.com">
       </div>
       <div class="modal-letter-item">
-        <p class="modal-description">Текст письма:</p>
-        <label for="letter-text">
-          <textarea class="user-text" name="comment" id="letter-text" cols="59" rows="4"
-            placeholder="В свободной форме"></textarea>
-        </label>
+        <label class="modal-letter-title" for="letter-text">Текст письма:</label>
+        <textarea class="user-text" name="comment" id="letter-text" cols="59" rows="4"
+          placeholder="В свободной форме"></textarea>
       </div>
     </form>
 
