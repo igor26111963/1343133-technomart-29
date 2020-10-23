@@ -691,11 +691,14 @@
 .product-item:hover {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
- .product-item:hover .product-item-image{
+ .product-item:hover .product-item-image,
+ .product-item:focus .product-item-image{
     display: none;
 }
 .product-item:hover .product-item-buy,
-.product-item:hover .product-item-tab{
+.product-item:hover .product-item-tab,
+.product-item:focus .product-item-buy,
+.product-item:focus .product-item-tab{
     display: block;
 }
 
@@ -889,8 +892,6 @@
     text-align: left;
     padding: 16px 22px;
     border: none;
-    outline: none;
-
 }
 .service-slider-button:hover {
     background-color: var(--basic-dark);
@@ -1685,7 +1686,7 @@
     height: 449px;
     border-top: 7px solid var(--basic-red);
     margin: 0 auto;
-    display: block;
+    display: none;
 }
 
 .modal-image{
@@ -1708,10 +1709,10 @@
 
 .modal-catalog{
     z-index: 2;
-    width: 620px;
+    width: 620px;я
     left: 13px;
     background-color: var(--basic-white);
-    display: block;
+    display: none;
 }
 .modal-catalog-basket{
     padding: 44px 100px;
