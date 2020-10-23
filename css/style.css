@@ -655,6 +655,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+    padding: 0;
 }
 
 
@@ -724,6 +725,7 @@
 
 
 .product-item-top{
+    order: -1;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -1156,10 +1158,11 @@
 }
 
 
-.product-item-grid{
+.product-item-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr );
     grid-gap: 18px 20px;
+    padding: 0;
 }
 
 
