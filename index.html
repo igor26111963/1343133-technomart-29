@@ -121,11 +121,23 @@
                 <h3 class="shop-slider-title">Перфораторы</h3>
                 <p class="shop-slider-text">Настоящие мужские игрушки</p>
                 <a class="button shop-slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+                <button class="shop-slider-button-left" type="button">
+                  <img src="img/icon-left.svg" alt="Сдвинуть влево">
+                </button>
+                <button class="shop-slider-button-right" type="button">
+                  <img src="img/icon-left.svg" alt="Сдвинуть вправо">
+                </button>
               </li>
               <li class="shop-slider-drill">
                 <h3 class="shop-slider-title">Дрели</h3>
                 <p class="shop-slider-text">Соседям на радость!</p>
                 <a class="button shop-slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+                <button class="shop-slider-button-left" type="button">
+                  <img src="img/icon-left.svg" alt="Сдвинуть влево">
+                </button>
+                <button class="shop-slider-button-right" type="button">
+                  <img src="img/icon-left.svg" alt="Сдвинуть вправо">
+                </button>
               </li>
             </ul>
             <div class="shop-slider-controls">
@@ -315,7 +327,7 @@
           <section class="contact">
             <h2 class="company-title">КОНТАКТЫ</h2>
             <p class="contact-text">Вы можете забрать товар сами, заехав в наш офис:</p>
-            <a href="">
+            <a class="contact-map" href="#">
               <img class="contact-picture" src="img/small-map.jpg" alt="Карта" width="300" height="158">
             </a>
             <a class="button button-contact" href="#">Заблудились? Напишите нам!</a>
@@ -400,9 +412,9 @@
     </div>
   </footer>
 
+
   <section class="modal modal-letter">
     <h2 class="visually-hidden">Напишите нам</h2>
-
     <form class="form-letter" action="https://echo.htmlacademy.ru" method="post">
       <div class="modal-letter-item">
         <label class="modal-letter-title" for="letter-name">Ваше имя:</label>
@@ -418,12 +430,12 @@
           placeholder="В свободной форме"></textarea>
       </div>
     </form>
-
     <div class="modal-button">
       <button class="button" type="submit">Отправить</button>
     </div>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
+
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
@@ -435,6 +447,8 @@
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
+  <script src="letter.js"></script>
+  <script src="map.js"></script>
 
 </body>
 
