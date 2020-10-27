@@ -1599,7 +1599,7 @@
 }
 .modal-show{
     display: block;
-    animation: 0.6s;
+    animation: bounce 0.6s;
 }
 .modal-error {
     animation: shake 0.6s;
@@ -1611,7 +1611,7 @@
 }
 .form-letter{
     width: 460px;
-    padding: 39px 80px 29px;
+    padding: 40px 80px 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -1660,11 +1660,12 @@
 }
 .modal-letter .button{
     width: 460px;
-    margin: 8px auto 4px;
+    margin: 0 auto;
     border: none;
 }
 .modal-button{
-    padding: 37px 80px;
+    margin-top: 34px;
+    padding: 37px 0;
     background-color: var(--basic-beige);
 }
 
