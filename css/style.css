@@ -1609,7 +1609,7 @@
     max-width: 620px;
     background-color: var(--basic-white);
 }
-.form-letter{
+.form-letter-container{
     width: 460px;
     padding: 40px 80px 0;
     display: flex;
@@ -1744,23 +1744,15 @@
     transform: translateY(-2000px);
   }
 
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
-  }
-
   100% {
-    transform: translateY(0);
+    transform: translateY(-50%);
   }
 }
 
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translateX(0) translateY(-50%);
   }
 
   10%,
@@ -1768,13 +1760,13 @@
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translateX(-10px) translateY(-50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translateX(10px) translateY(-50%);
   }
 }
