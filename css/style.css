@@ -540,28 +540,20 @@
     color: var(--basic-white);
     padding: 22px 25px 28px;
 }
-.shop-slider-perforator::before,
-.shop-slider-drill::before{
+.shop-slider-button-left{
     position: absolute;
-    content: "";
-    width: 22px;
-    height: 40px;
-    left: 24px;
+    left: 17px;
     top: 121px;
-    background-image: url(../img/icon-left.svg);
-    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
 }
-.shop-slider-perforator::after,
-.shop-slider-drill::after{
+.shop-slider-button-right{
     position: absolute;
-    content: "";
-    width: 22px;
-    height: 40px;
-    right: 21px;
-    top: 120px;
-    background-image: url(../img/icon-left.svg);
-    background-repeat: no-repeat;
+    right: 13px;
+    top: 116px;
     transform: rotate(180deg);
+    background-color: transparent;
+    border: none;
 }
 .shop-slider-controls{
     position: absolute;
@@ -1600,18 +1592,26 @@
     right: 0;
     left: 0;
     margin: auto;
+    display: none;
     border-top: 7px solid var(--basic-red);
     filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
     transform: translateY(-50%);
 }
+.modal-show{
+    display: block;
+    animation: bounce 0.6s;
+}
+.modal-error {
+    animation: shake 0.6s;
+}
+
 .modal-letter{
     max-width: 620px;
     background-color: var(--basic-white);
-    display: none;
 }
 .form-letter{
     width: 460px;
-    padding: 39px 80px 29px;
+    padding: 40px 80px 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -1660,11 +1660,12 @@
 }
 .modal-letter .button{
     width: 460px;
-    margin: 8px auto 4px;
+    margin: 0 auto;
     border: none;
 }
 .modal-button{
-    padding: 37px 80px;
+    margin-top: 34px;
+    padding: 37px 0;
     background-color: var(--basic-beige);
 }
 
@@ -1673,7 +1674,6 @@
     height: 449px;
     border-top: 7px solid var(--basic-red);
     margin: 0 auto;
-    display: none;
 }
 
 .modal-image{
@@ -1737,4 +1737,44 @@
     border: none;
     background-color: var(--basic-white);
     color: var(--basic-black);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }

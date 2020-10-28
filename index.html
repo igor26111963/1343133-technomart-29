@@ -121,13 +121,21 @@
                 <h3 class="shop-slider-title">Перфораторы</h3>
                 <p class="shop-slider-text">Настоящие мужские игрушки</p>
                 <a class="button shop-slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+
               </li>
               <li class="shop-slider-drill">
                 <h3 class="shop-slider-title">Дрели</h3>
                 <p class="shop-slider-text">Соседям на радость!</p>
                 <a class="button shop-slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+
               </li>
             </ul>
+            <button class="shop-slider-button-left" type="button">
+              <img src="img/icon-left.svg" alt="Сдвинуть влево">
+            </button>
+            <button class="shop-slider-button-right" type="button">
+              <img src="img/icon-left.svg" alt="Сдвинуть вправо">
+            </button>
             <div class="shop-slider-controls">
               <button class="shop-slider-control-btn current" type="button" aria-label="Предыдущий слайд"></button>
               <button class="shop-slider-control-btn" type="button" aria-label="Следующий слайд"></button>
@@ -315,7 +323,7 @@
           <section class="contact">
             <h2 class="company-title">КОНТАКТЫ</h2>
             <p class="contact-text">Вы можете забрать товар сами, заехав в наш офис:</p>
-            <a href="">
+            <a class="contact-map" href="#">
               <img class="contact-picture" src="img/small-map.jpg" alt="Карта" width="300" height="158">
             </a>
             <a class="button button-contact" href="#">Заблудились? Напишите нам!</a>
@@ -400,9 +408,9 @@
     </div>
   </footer>
 
+
   <section class="modal modal-letter">
     <h2 class="visually-hidden">Напишите нам</h2>
-
     <form class="form-letter" action="https://echo.htmlacademy.ru" method="post">
       <div class="modal-letter-item">
         <label class="modal-letter-title" for="letter-name">Ваше имя:</label>
@@ -417,13 +425,13 @@
         <textarea class="user-text" name="comment" id="letter-text" cols="59" rows="4"
           placeholder="В свободной форме"></textarea>
       </div>
+      <div class="modal-button">
+        <button class="button" type="submit">Отправить</button>
+      </div>
     </form>
-
-    <div class="modal-button">
-      <button class="button" type="submit">Отправить</button>
-    </div>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
+
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
@@ -435,6 +443,8 @@
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
+  <script src="js/login.js"></script>
+  <script src="js/map.js"></script>
 
 </body>
 
