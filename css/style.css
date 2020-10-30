@@ -1246,8 +1246,19 @@
 .range-inner, .selection-checkbox-inner, .selection-radio-inner {
   padding: 0;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 16px;
   border: none;
+}
+
+.range-inner, .selection-checkbox-inner{
+  border-bottom: 1px solid var(--basic-beige);
+}
+.range-inner{
+  padding-bottom: 26px;
+}
+.selection-checkbox-inner{
+  margin-bottom: 23px;
+  padding-bottom: 29px;
 }
 
 .filters .filter-option-list {
@@ -1270,26 +1281,6 @@
   padding-bottom: 0;
 }
 
-.selection-checkbox-inner {
-  position: relative;
-  padding-top: 18px;
-}
-
-.selection-radio-inner {
-  position: relative;
-  padding-top: 10px;
-}
-
-.selection-checkbox-inner::before, .selection-radio-inner::before {
-  position: absolute;
-  content: "";
-  width: 220px;
-  height: 1px;
-  top: -17px;
-  left: 0;
-  border-bottom: 1px solid var(--basic-beige);
-}
-
 .range-filter {
   width: 220px;
   margin-top: 11px;
@@ -1301,6 +1292,9 @@
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
+}
+ .selection-checkbox-inner .filter-title{
+  margin-bottom: 16px;
 }
 
 .range-controls {
@@ -1363,11 +1357,15 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
+  -moz-appearance:  textfield;
 }
 
 .price-controls-text::-webkit-outer-spin-button, .price-controls-text::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  -moz-appearance: none;
+  margin: 0;
+}
+.price-controls-text{
+
 }
 
 .price-controls .max-price {
