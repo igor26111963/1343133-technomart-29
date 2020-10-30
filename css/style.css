@@ -50,7 +50,7 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -125,10 +125,12 @@
   padding: 11px 30px 11px 43px;
   background-color: transparent;
   border: none;
+  color: var(--basic-white);
 }
 
 .header-search::-moz-placeholder {
   color: var(--basic-white);
+  opacity: 1;
 }
 
 .header-search::-webkit-input-placeholder {
@@ -767,7 +769,7 @@
 }
 
 .product-item-text {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -777,7 +779,7 @@
 }
 
 .price-old {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -790,7 +792,7 @@
   padding: 10px 39px 10px 29px;
   background-image: url("../img/price.svg");
   background-repeat: no-repeat;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -905,7 +907,7 @@
 
 .service-text {
   width: 400px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -969,7 +971,7 @@
 }
 
 .service-slider-text {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -1020,7 +1022,7 @@
 }
 
 .about-text {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   margin-top: 23px;
@@ -1066,7 +1068,7 @@
 }
 
 .contact-text {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   width: 180px;
@@ -1111,7 +1113,7 @@
 }
 
 .breadcrumbs-link {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1140,7 +1142,7 @@
 }
 
 .catalog-sidebar-title, .catalog-page-menu-title, .catalog-page-menu-link {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -1154,7 +1156,7 @@
 }
 
 .catalog-sidebar-text, .catalog-page-menu {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -1294,7 +1296,7 @@
 }
 
 .filter-title {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
@@ -1349,27 +1351,27 @@
   justify-content: flex-start;
 }
 
-.price-controls .price-controls-text {
+.price-controls-text {
   width: 95px;
   padding: 9px 0;
-  list-style: none;
   text-align: center;
   color: var(--basic-dupont);
   border: none;
   border-radius: 5px;
   background: var(--basic-beige);
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
 }
 
-.price-controls input::-webkit-outer-spin-button, .price-controls input::-webkit-inner-spin-button {
+.price-controls-text::-webkit-outer-spin-button, .price-controls-text::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .price-controls .max-price {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -1391,7 +1393,7 @@
   display: block;
   cursor: pointer;
   user-select: none;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 19px;
@@ -1471,7 +1473,7 @@
 
 .filter-button {
   padding: 10px 78px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -1494,7 +1496,7 @@
 
 .pagination-link {
   padding: 10px 15px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -1540,7 +1542,7 @@
 
 .promo-text {
   max-width: 907px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -1791,7 +1793,7 @@
 .user-name, .user-mail {
   width: 220px;
   padding: 6px 11px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
@@ -1806,7 +1808,7 @@
 
 .user-text {
   padding: 5px 16px 10px 10px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
