@@ -8,7 +8,7 @@
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/min.css">
 </head>
 
 <body class="page-body">
@@ -131,10 +131,10 @@
               </li>
             </ul>
             <button class="shop-slider-button-left" type="button">
-              <img src="img/icon-left.svg" alt="Сдвинуть влево">
+              <img src="img/icon-left.svg" alt="Сдвинуть влево" width="22" height="40">
             </button>
             <button class="shop-slider-button-right" type="button">
-              <img src="img/icon-left.svg" alt="Сдвинуть вправо">
+              <img src="img/icon-left.svg" alt="Сдвинуть вправо" width="22" height="40">
             </button>
             <div class="shop-slider-controls">
               <button class="shop-slider-control-btn current" type="button" aria-label="Предыдущий слайд"></button>
@@ -153,7 +153,7 @@
           <li class="product-item" tabindex="0">
             <h4 class="product-item-text">Перфоратор BOSCH BFG 9000</h4>
             <div class="product-item-top">
-              <img class="product-item-image" src="img/bfg9000.png" alt="Перфоратор BOSH" width="184" height="164">
+              <img class="product-item-image" src="img/bfg9000.jpg" alt="Перфоратор BOSH" width="184" height="164">
               <button class="product-item-buy" type="button" tabindex="0">КУПИТЬ</button>
               <button class="product-item-tab" type="button">В закладки</button>
             </div>
@@ -165,7 +165,7 @@
           <li class="product-item" tabindex="0">
             <h4 class="product-item-text">Перфоратор BOSCH BFG 3000</h4>
             <div class="product-item-top">
-              <img class="product-item-image" src="img/bfg3000.png" alt="Перфоратор BOSH" width="127" height="112">
+              <img class="product-item-image" src="img/bfg3000.jpg" alt="Перфоратор BOSH" width="127" height="112">
               <button class="product-item-buy" type="button">КУПИТЬ</button>
               <button class="product-item-tab" type="button">В закладки</button>
             </div>
@@ -178,7 +178,7 @@
           <li class="product-item" tabindex="0">
             <h4 class="product-item-text">Перфоратор BOSCH BFG 6000</h4>
             <div class="product-item-top">
-              <img class="product-item-image" src="img/bfg6000.png" alt="Перфоратор BOSH" width="144" height="128">
+              <img class="product-item-image" src="img/bfg6000.jpg" alt="Перфоратор BOSH" width="144" height="128">
               <button class="product-item-buy" type="button">КУПИТЬ</button>
               <button class="product-item-tab" type="button">В закладки</button>
             </div>
@@ -190,7 +190,7 @@
           <li class="product-item" tabindex="0">
             <h4 class="product-item-text">Перфоратор BOSCH BFG 2000</h4>
             <div class="product-item-top">
-              <img class="product-item-image" src="img/bfg2000.png" alt="Перфоратор BOSH" width="127" height="122">
+              <img class="product-item-image" src="img/bfg2000.jpg" alt="Перфоратор BOSH" width="127" height="122">
               <button class="product-item-buy" type="button">КУПИТЬ</button>
               <button class="product-item-tab" type="button">В закладки</button>
             </div>
@@ -402,7 +402,7 @@
           <p class="footer-bottom-mail">Обратная связь: <a class="footer-bottom-mail-link"
               href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
           <p class="footer-bottom-text">Разработано — <a class="footer-bottom-text-link"
-              href="https://up.htmlacademy.ru/htmlcss/29">htmlacademy.ru</a></p>
+              href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
         </div>
       </div>
     </div>
@@ -412,18 +412,20 @@
   <section class="modal modal-letter">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="form-letter" action="https://echo.htmlacademy.ru" method="post">
-      <div class="modal-letter-item">
-        <label class="modal-letter-title" for="letter-name">Ваше имя:</label>
-        <input class="user-name" id="letter-name" type="text" name="name" placeholder="Имя Фамилия">
-      </div>
-      <div class="modal-letter-item">
-        <label class="modal-letter-title" for="letter-mail">Ваш e-mail:</label>
-        <input class="user-mail" type="email" name="email" id="letter-mail" placeholder="email@example.com">
-      </div>
-      <div class="modal-letter-item">
-        <label class="modal-letter-title" for="letter-text">Текст письма:</label>
-        <textarea class="user-text" name="comment" id="letter-text" cols="59" rows="4"
-          placeholder="В свободной форме"></textarea>
+      <div class="form-letter-container">
+        <div class="modal-letter-item">
+          <label class="modal-letter-title" for="letter-name">Ваше имя:</label>
+          <input class="user-name" id="letter-name" type="text" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div class="modal-letter-item">
+          <label class="modal-letter-title" for="letter-mail">Ваш e-mail:</label>
+          <input class="user-mail" type="email" name="email" id="letter-mail" placeholder="email@example.com">
+        </div>
+        <div class="modal-letter-item">
+          <label class="modal-letter-title" for="letter-text">Текст письма:</label>
+          <textarea class="user-text" name="comment" id="letter-text" cols="59" rows="4"
+            placeholder="В свободной форме"></textarea>
+        </div>
       </div>
       <div class="modal-button">
         <button class="button" type="submit">Отправить</button>
@@ -437,14 +439,12 @@
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31979.5498718426!2d30.284320014148715!3d59.93675724440811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1602358960614!5m2!1sru!2sru"
-      width="943" height="449" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+      width="943" height="449" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
       title="Офис компании по адресу: ул. Большая Конюшенная 19, Санкт-Петерург"></iframe>
-    <!-- <img class="modal-image" src="img/large-map.png" alt="" width="943" height="449"> -->
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
-  <script src="js/login.js"></script>
-  <script src="js/map.js"></script>
+  <script src="js/min.js"></script>
 
 </body>
 
