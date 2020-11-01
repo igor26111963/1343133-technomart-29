@@ -21,7 +21,8 @@
         </a>
         <div class="header-top-inner">
           <form class="header-search-form" action="https://echo.htmlacademy.ru" method="get">
-            <input class="header-search" type="text" placeholder="Поиск:">
+            <label for="search"></label>
+            <input class="header-search" type="text" name="search" id="search" placeholder="Поиск:">
             <button class="header-search-button" type="submit"></button>
           </form>
           <a class="header-top-link-bookmark" href="#" aria-label="Закладки">Закладки:0</a>
@@ -122,10 +123,10 @@
                   <div class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
-                  <label class="min-price"></label>
-                  <input class="price-controls-text" type="number" name="min-price" value="0">
-                  <label class="max-price">&mdash;</label>
-                  <input class="price-controls-text" type="number" name="max-price" value="30000">
+                  <label class="min-price" for="min-price"></label>
+                  <input class="price-controls-text" type="number" name="min-price" value="0" id="min-price">
+                  <label class="max-price" for="max-price">&mdash;</label>
+                  <input class="price-controls-text" type="number" name="max-price" value="30000" id="max-price">
                 </div>
               </div>
             </fieldset>
@@ -198,13 +199,13 @@
               </li>
             </ul>
             <div class="catalog-page-menu-button">
-              <button class="page-menu-button-up" type="button">
+              <button class="page-menu-button-up" type="button" aria-label="Сортировка по возрастанию">
                 <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="catalog-buttton-image button-active" d="M5.66241 0L11.1624 10L0.162415 10" fill="black"
                     fill-opacity=".3" />
                 </svg>
               </button>
-              <button class="page-menu-button-down" type="button">
+              <button class="page-menu-button-down" type="button" aria-label="Сортировка по убыванию">
                 <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="catalog-buttton-image" d="M5.66241 0L11.1624 10L0.162415 10" fill="black"
                     fill-opacity=".3" />
